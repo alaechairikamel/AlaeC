@@ -3,13 +3,15 @@ package com.devops.bookshopapi.service;
 import com.devops.bookshopapi.dto.BookResponse;
 import com.devops.bookshopapi.dto.CategoryResponse;
 import com.devops.bookshopapi.entity.Book;
+import com.devops.bookshopapi.exception.NotFoundException;
 import com.devops.bookshopapi.repository.BookRepository;
 import com.devops.bookshopapi.repository.CategoryRepository;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
-
+@Service
 public class PublicService {
     private final CategoryRepository categoryRepository;
     private final BookRepository bookRepository;

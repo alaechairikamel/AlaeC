@@ -6,7 +6,8 @@ import com.devops.bookshopapi.entity.Book;
 import com.devops.bookshopapi.entity.Category;
 import com.devops.bookshopapi.repository.BookRepository;
 import com.devops.bookshopapi.repository.CategoryRepository;
-import org.apache.coyote.BadRequestException;
+import com.devops.bookshopapi.exception.NotFoundException;
+import com.devops.bookshopapi.exception.BadRequestException;
 import org.springframework.stereotype.Service;
 
 @Service

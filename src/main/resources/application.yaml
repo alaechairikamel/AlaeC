@@ -2,7 +2,7 @@ spring:
   datasource:
     url: ${DB_URL:jdbc:mysql://localhost:3306/bookshop?createDatabaseIfNotExist=true&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC}
     username: ${DB_USER:root}
-    password: ${DB_PASSWORD:1111}
+    password: ${DB_PASSWORD:}
   jpa:
     hibernate:
       ddl-auto: update
