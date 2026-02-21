@@ -1,4 +1,6 @@
 package com.devops.bookshopapi.exception;
 
-public record ApiError() {
+import java.time.Instant;
+
+public record ApiError(Instant timestamp, int status, String error, String message, String path) {
 }
