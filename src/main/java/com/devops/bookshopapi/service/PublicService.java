@@ -8,9 +8,10 @@ import com.devops.bookshopapi.repository.BookRepository;
 import com.devops.bookshopapi.repository.CategoryRepository;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
-
+@Service
 public class PublicService {
     private final CategoryRepository categoryRepository;
     private final BookRepository bookRepository;
