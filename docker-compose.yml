@@ -1,18 +1,18 @@
 services:
   db:
     image: mysql:8.0
-    container_name: bookshop-db
+    container_name: AlaeC-bookshop-db
     environment:
       MYSQL_ROOT_PASSWORD: ${DB_PASSWORD:-1111}
       MYSQL_DATABASE: bookshop
     ports:
-      - "3306:3306"
+      - "3310:3306"
     volumes:
-      - db_data:/var/lib/mysql
+      - AlaeC_db_data:/var/lib/mysql
 
   app:
     build: .
-    container_name: bookshop-app
+    container_name: AlaeC-bookshop-app
     depends_on:
       - db
     environment:
@@ -21,7 +21,7 @@ services:
       DB_PASSWORD: ${DB_PASSWORD:-1111}
       JWT_SECRET: ${JWT_SECRET}
     ports:
-      - "8080:8080"
+      - "8085:8080"
 
 volumes:
-  db_data:
+  AlaeC_db_data:
