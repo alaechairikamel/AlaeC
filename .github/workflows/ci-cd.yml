@@ -2,7 +2,7 @@ name: CI/CD Bookshop
 
 on:
   push:
-    branches: ["Master"]
+    branches: ["master"]
 
 jobs:
   build-and-deploy:
