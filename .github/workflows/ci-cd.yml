@@ -37,4 +37,5 @@ jobs:
             export DB_PASSWORD='${{ secrets.DB_PASSWORD }}'
             docker compose down
             docker compose up -d --build
+            sleep 60  # wait 15 seconds
             curl -f http://localhost:8080/actuator/health
